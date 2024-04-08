@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Breast Cancer Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <div class="content">
+        <div class="header">
+            <img src="{{ url_for('static', filename='download.png') }}" class="logo">
+            <h1>
+                <span>Breast Cancer Prediction</span><br>
+                <span class="pred">AI - Hybrid Model</span>
+            </h1>
+            <img src="{{ url_for('static', filename='Picture5.jpg') }}" class="logo-right">
+        </div>
+        <h3>Load Input Data:</h3>
+        <!--<div class="flex-form">-->
+            <form action="/predict" method="POST">
+                <div class="input-row">
+                    <input type="float" name="radius_mean" id="radius_mean" placeholder="radius_mean">
+                    <input type="float" name="texture_mean" id="texture_mean" placeholder="texture_mean">
+                    <input type="float" name="perimeter_mean" id="perimeter_mean" placeholder="perimeter_mean">
+                    <input type="float" name="area_mean" id="area_mean" placeholder="area_mean">
+                    <input type="float" name="smoothness_mean" id="smoothness_mean" placeholder="smoothness_mean">
+                </div>
+                <div class="input-row">
+                    <input type="float" name="compactness_mean" id="compactness_mean" placeholder="compactness_mean">
+                    <input type="float" name="concavity_mean" id="concavity_mean" placeholder="concavity_mean">
+                    <input type="float" name="concave_points_mean" id="concave_points_mean" placeholder="concave_points_mean">
+                    <input type="float" name="symmetry_mean" id="symmetry_mean" placeholder="symmetry_mean">
+                    <input type="float" name="fractal_dimension_mean" id="fractal_dimension_mean" placeholder="fractal_dimension_mean">
+                </div>
+                <div class="input-row">
+                    <input type="float" name="radius_se" id="radius_se" placeholder="radius_se">
+                    <input type="float" name="texture_se" id="texture_se" placeholder="texture_se">
+                    <input type="float" name="perimeter_se" id="perimeter_se" placeholder="perimeter_se">
+                    <input type="float" name="area_se" id="area_se" placeholder="area_se">
+                    <input type="float" name="smoothness_se" id="smoothness_se" placeholder="smoothness_se">
+                </div>
+                <div class="input-row">
+                    <input type="float" name="compactness_se" id="compactness_se" placeholder="compactness_se">
+                    <input type="float" name="concavity_se" id="concavity_se" placeholder="concavity_se">
+                    <input type="float" name="concave_points_se" id="concave_points_se" placeholder="concave_points_se">
+                    <input type="float" name="symmetry_se" id="symmetry_se" placeholder="symmetry_se">
+                    <input type="float" name="fractal_dimension_se" id="fractal_dimension_se" placeholder="fractal_dimension_se">
+                </div>
+                <div class="input-row">
+                    <input type="float" name="radius_worst" id="radius_worst" placeholder="radius_worst">
+                    <input type="float" name="texture_worst" id="texture_worst" placeholder="texture_worst">
+                    <input type="float" name="perimeter_worst" id="perimeter_worst" placeholder="perimeter_worst">
+                    <input type="float" name="area_worst" id="area_worst" placeholder="area_worst">
+                    <input type="float" name="smoothness_worst" id="smoothness_worst" placeholder="smoothness_worst">
+                </div>
+                <div class="input-row">
+                    <input type="float" name="compactness_worst" id="compactness_worst" placeholder="compactness_worst">
+                    <input type="float" name="concavity_worst" id="concavity_worst" placeholder="concavity_worst">
+                    <input type="float" name="concave_points_worst" id="concave_points_worst" placeholder="concave_points_worst">
+                    <input type="float" name="symmetry_worst" id="symmetry_worst" placeholder="symmetry_worst">
+                    <input type="float" name="fractal_dimension_worst" id="fractal_dimension_worst" placeholder="fractal_dimension_worst">
+                </div>
+                
+                <button type="submit" value="Predict">Predict</button>
+            </form>
+        <!--</div>-->
+    </div>
+</body>
+</html>

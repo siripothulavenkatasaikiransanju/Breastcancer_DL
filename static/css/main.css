@@ -1,0 +1,195 @@
+@import "compass/css3";
+
+@import url('https://fonts.googleapis.com/css?family=Dosis:300|Lato:300,400,600,700|Roboto+Condensed:300,700|Open+Sans+Condensed:300,600|Open+Sans:400,300,600,700|Maven+Pro:400,700');
+
+@import url('https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
+
+
+* {
+  box-sizing:border-box;
+}
+
+html {
+  background: rgb(6, 94, 121);
+}
+
+body {
+  font-family: "Open Sans";
+  font-size: 16px;
+  color: White;
+  /*font-smoothing: antialiased;*/
+  font-weight: 600;
+}
+
+.content:before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0; bottom: 0;
+  z-index: -1;
+
+  display: block;
+  background-color: rgba(245, 10, 10, 0.684);
+  
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+}
+
+.content {
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  width: 1400px;
+  height: 650px;
+  
+  background-color: rgba(250, 243, 28, 0.745);
+  margin: auto auto;
+  padding: 10px;
+  text-align: center;
+  border: 5px solid #24e706;
+  border-radius:30px;
+  box-shadow:0 0 20px rgb(55, 2, 245);
+ }
+
+
+ .header {
+  display: flex;
+  align-items: center; /* Center align items vertically */
+  justify-content: center; /* Center align items horizontally */
+  margin-bottom: 20px; /* Add some margin to the bottom of the header */
+}
+
+.logo {
+  width: 150px; /* Increase the width of the logo */
+  height: 140px; /* Maintain aspect ratio */
+  border-radius: 20%; /* Create a circular border */
+  border: 5px ;/*solid white;  Add border */
+  padding: 2px; /* Add padding to the border */
+  /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+  margin-right: 10px; /* Adjust spacing between logo and heading */
+}
+
+.logo-right {
+  width: 150px; /* Increase the width of the logo */
+  height: 140px; /* Maintain aspect ratio */
+  border-radius: 15%; /* Create a circular border */
+  border: 5px ;/*solid white;  Add border */
+  padding: 2px; /* Add padding to the border */
+  /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+  margin-left: 10px; /* Adjust spacing between logo and heading */
+}
+
+
+h1 {
+
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 0.5; /* Adjust the line height for proper spacing between the lines */
+    color: rgb(233, 7, 7);
+    padding-bottom: 2px;
+    margin-top:30px;
+    text-shadow: 0 0 3px rgba(231, 15, 177, 0.7); /* Add text shadow */
+}
+h1 span {
+  display: block; /* Display each word on a separate line */
+}
+.pred {
+  font-size: 2.0rem; /* Adjust font size as needed */
+  color: white; /* Change color as desired */
+}
+
+h3{
+  text-align:left;
+  font-weight: bold;
+}
+
+/* Add this CSS to main.css */
+
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.input-row input {
+  flex: 1;
+  margin-right: 10px;
+  border: 3px solid #111010; /* Add border */
+  font-weight: bold; /* Make text bold */
+  padding: 5px; /* Adjust padding */
+}
+
+.input-row input:last-child {
+  margin-right: 0;
+}
+
+.input-column {
+  width: 52%;
+  padding: 10px;
+  display: flex;
+  /*flex-direction: column; /* Set flex direction to column */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  margin: 0 auto; /* Center the column horizontally */
+}
+
+.input-column input {
+  flex: 1;
+  margin-right: 10px; /* Add margin-bottom for spacing between inputs */
+  border: 3px solid #1b0616; /* Add border */
+  font-weight: bold; /* Make text bold */
+  padding: 8px; /* Adjust padding */
+}
+
+.input-column input:last-child {
+  margin-right: 0; /* Remove margin-bottom for the last input */
+}
+
+
+input::placeholder {
+  color: #1b32b3; /* Change the color of the placeholder text */
+  text-align: center;
+   font-size: 1.1rem;
+  font-weight: 1000;
+}
+
+input {
+    width: 80%;
+    font-size: 1.2rem;
+    font-family: "Open Sans";
+    color:rgb(198, 27, 27);
+    text-align:  left;
+    background-color: rgb(245, 245, 245);
+    color: black;
+    margin: 10px 0px;
+    
+    border: none;
+    padding: 10px;
+    border-radius:4px;
+
+}
+
+button {
+    width: 30%;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 10px;
+    margin: 20px 0px;
+
+    background-color: #45e506;
+    color: White;
+    border: none;
+    border-radius: 35px;
+}
+
+
+
+
